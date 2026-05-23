@@ -8,6 +8,10 @@ Runtime control plane for [ADK-Rust Enterprise](https://enterprise.adk-rust.com)
 
 ## Purpose
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zavora-ai/mcp-environment/main/docs/architecture.svg" alt="Environment / Runtime MCP Architecture" width="800"/>
+</p>
+
 > Policy-controlled management of ADK-Rust runtime environments, worker pools, deployment bundles, configuration sync, provider routes, memory backend bindings, protocol bindings, payment runtime modes, validation gates, promotion, rollback, and configuration drift detection.
 
 This MCP is the **runtime control plane** — it knows where agents run, what version they're on, and how builds move between environments.

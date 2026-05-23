@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Inter, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="hg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb"/><stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="sg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1a2e"/><stop offset="100%" style="stop-color:#1e2d4a"/>
+    </linearGradient>
+    <linearGradient id="tg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d4ed8"/><stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="520" rx="12" fill="#080e1a"/>
+
+  <text x="400" y="32" text-anchor="middle" fill="#bfdbfe" font-size="16" font-weight="700">Environment / Runtime MCP — Architecture</text>
+
+  <!-- Operators -->
+  <rect x="40" y="48" width="720" height="44" rx="8" fill="#1e2d4a" stroke="#2563eb" stroke-width="1"/>
+  <text x="400" y="75" text-anchor="middle" fill="#93c5fd" font-size="12" font-weight="600">Platform Operators · CI/CD Pipelines · Governance Policy · ADK-Payments</text>
+
+  <!-- Server -->
+  <rect x="40" y="108" width="720" height="290" rx="10" fill="url(#sg)" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="400" y="132" text-anchor="middle" fill="url(#hg)" font-size="14" font-weight="700">Environment / Runtime MCP Server</text>
+
+  <!-- Tools row 1 -->
+  <rect x="55" y="145" width="130" height="42" rx="5" fill="url(#tg)"/>
+  <text x="120" y="163" text-anchor="middle" fill="#eff6ff" font-size="9" font-weight="600">list_environments</text>
+  <text x="120" y="178" text-anchor="middle" fill="#93c5fd" font-size="8">get_environment</text>
+
+  <rect x="193" y="145" width="130" height="42" rx="5" fill="url(#tg)"/>
+  <text x="258" y="163" text-anchor="middle" fill="#eff6ff" font-size="9" font-weight="600">validate_environment</text>
+  <text x="258" y="178" text-anchor="middle" fill="#93c5fd" font-size="8">detect_config_drift</text>
+
+  <rect x="331" y="145" width="130" height="42" rx="5" fill="url(#tg)"/>
+  <text x="396" y="163" text-anchor="middle" fill="#eff6ff" font-size="9" font-weight="600">promote_build</text>
+  <text x="396" y="178" text-anchor="middle" fill="#93c5fd" font-size="8">rollback_deploy</text>
+
+  <rect x="469" y="145" width="140" height="42" rx="5" fill="url(#tg)"/>
+  <text x="539" y="163" text-anchor="middle" fill="#eff6ff" font-size="9" font-weight="600">scale_worker_pool</text>
+  <text x="539" y="178" text-anchor="middle" fill="#93c5fd" font-size="8">get_worker_pool_status</text>
+
+  <rect x="617" y="145" width="130" height="42" rx="5" fill="url(#tg)"/>
+  <text x="682" y="163" text-anchor="middle" fill="#eff6ff" font-size="9" font-weight="600">sync_config</text>
+  <text x="682" y="178" text-anchor="middle" fill="#93c5fd" font-size="8">get_deploy_history</text>
+
+  <!-- Environments -->
+  <rect x="55" y="200" width="160" height="65" rx="6" fill="url(#bg)" stroke="#334155" stroke-width="1"/>
+  <text x="135" y="220" text-anchor="middle" fill="#f1f5f9" font-size="10" font-weight="600">Development</text>
+  <text x="135" y="236" text-anchor="middle" fill="#94a3b8" font-size="8">local · no restrictions</text>
+  <rect x="75" y="245" width="120" height="12" rx="3" fill="#22c55e" opacity="0.2"/>
+  <text x="135" y="255" text-anchor="middle" fill="#86efac" font-size="7">healthy</text>
+
+  <rect x="225" y="200" width="160" height="65" rx="6" fill="url(#bg)" stroke="#334155" stroke-width="1"/>
+  <text x="305" y="220" text-anchor="middle" fill="#f1f5f9" font-size="10" font-weight="600">Staging</text>
+  <text x="305" y="236" text-anchor="middle" fill="#94a3b8" font-size="8">us-east-1 · pre-prod</text>
+  <rect x="245" y="245" width="120" height="12" rx="3" fill="#22c55e" opacity="0.2"/>
+  <text x="305" y="255" text-anchor="middle" fill="#86efac" font-size="7">healthy</text>
+
+  <rect x="395" y="200" width="160" height="65" rx="6" fill="url(#bg)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="475" y="220" text-anchor="middle" fill="#f1f5f9" font-size="10" font-weight="700">Production</text>
+  <text x="475" y="236" text-anchor="middle" fill="#94a3b8" font-size="8">us-east-1 · full governance</text>
+  <rect x="415" y="245" width="120" height="12" rx="3" fill="#22c55e" opacity="0.2"/>
+  <text x="475" y="255" text-anchor="middle" fill="#86efac" font-size="7">healthy</text>
+
+  <rect x="565" y="200" width="180" height="65" rx="6" fill="url(#bg)" stroke="#334155" stroke-width="1"/>
+  <text x="655" y="220" text-anchor="middle" fill="#f1f5f9" font-size="10" font-weight="600">EU Production</text>
+  <text x="655" y="236" text-anchor="middle" fill="#94a3b8" font-size="8">eu-west-1 · regional</text>
+  <rect x="595" y="245" width="120" height="12" rx="3" fill="#22c55e" opacity="0.2"/>
+  <text x="655" y="255" text-anchor="middle" fill="#86efac" font-size="7">healthy</text>
+
+  <!-- Worker Pools -->
+  <rect x="55" y="278" width="695" height="50" rx="6" fill="#0c1520" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="296" text-anchor="middle" fill="#bfdbfe" font-size="10" font-weight="600">Worker Pools</text>
+  <text x="110" y="316" text-anchor="middle" fill="#60a5fa" font-size="8">Model</text>
+  <text x="200" y="316" text-anchor="middle" fill="#60a5fa" font-size="8">Graph</text>
+  <text x="290" y="316" text-anchor="middle" fill="#60a5fa" font-size="8">Browser</text>
+  <text x="380" y="316" text-anchor="middle" fill="#60a5fa" font-size="8">Code</text>
+  <text x="470" y="316" text-anchor="middle" fill="#60a5fa" font-size="8">Realtime</text>
+  <text x="560" y="316" text-anchor="middle" fill="#60a5fa" font-size="8">Payment</text>
+  <text x="640" y="316" text-anchor="middle" fill="#60a5fa" font-size="8">MCP</text>
+  <text x="710" y="316" text-anchor="middle" fill="#60a5fa" font-size="8">A2A/ACP</text>
+
+  <!-- Promotion flow -->
+  <rect x="55" y="340" width="695" height="45" rx="6" fill="#0c1520" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="358" text-anchor="middle" fill="#fbbf24" font-size="10" font-weight="600">Promotion Flow</text>
+  <text x="400" y="375" text-anchor="middle" fill="#94a3b8" font-size="9">Build → Validate → Policy Check → Approve → Promote (canary/blue-green/rolling) → Monitor → Rollback if needed</text>
+
+  <!-- Badges -->
+  <rect x="40" y="415" width="85" height="22" rx="4" fill="#2563eb"/>
+  <text x="82" y="430" text-anchor="middle" fill="white" font-size="9" font-weight="600">rmcp 1.7</text>
+
+  <rect x="133" y="415" width="80" height="22" rx="4" fill="#1d4ed8"/>
+  <text x="173" y="430" text-anchor="middle" fill="white" font-size="9" font-weight="600">10 Tools</text>
+
+  <rect x="221" y="415" width="100" height="22" rx="4" fill="#0891b2"/>
+  <text x="271" y="430" text-anchor="middle" fill="white" font-size="9" font-weight="600">Plan / Apply</text>
+
+  <rect x="329" y="415" width="100" height="22" rx="4" fill="#059669"/>
+  <text x="379" y="430" text-anchor="middle" fill="white" font-size="9" font-weight="600">Drift Detection</text>
+
+  <rect x="437" y="415" width="110" height="22" rx="4" fill="#7c3aed"/>
+  <text x="492" y="430" text-anchor="middle" fill="white" font-size="9" font-weight="600">Config Versioning</text>
+
+  <rect x="555" y="415" width="100" height="22" rx="4" fill="#d97706"/>
+  <text x="605" y="430" text-anchor="middle" fill="white" font-size="9" font-weight="600">9 Pool Types</text>
+
+  <rect x="663" y="415" width="97" height="22" rx="4" fill="#be185d"/>
+  <text x="711" y="430" text-anchor="middle" fill="white" font-size="9" font-weight="600">Enterprise</text>
+
+  <!-- Integration refs -->
+  <rect x="40" y="450" width="720" height="40" rx="6" fill="#0c1520" stroke="#1e293b" stroke-width="1"/>
+  <text x="400" y="467" text-anchor="middle" fill="#64748b" font-size="9">Integrates with: Credentials Vault (secret refs) · Artifact Store (release bundles) · Governance (promotion gates) · Session Memory (rollback handling) · ADK-Payments (payment workers)</text>
+
+  <text x="400" y="510" text-anchor="middle" fill="#475569" font-size="10">enterprise.adk-rust.com · Zavora AI · Apache-2.0</text>
+</svg>
