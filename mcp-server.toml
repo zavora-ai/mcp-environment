@@ -1,0 +1,81 @@
+server_id = "mcp_environment"
+display_name = "Environment Manager"
+version = "1.2.0"
+domain = "platform"
+sdk_version = "0.1.0"
+risk_level = "high"
+writes_allowed = "gated"
+transports = ["stdio"]
+credentials = []
+governance_gates = ["deployment_approval"]
+environments = ["development", "staging", "production"]
+
+[[tools]]
+name = "list_environments"
+description = "Show dev, staging, production, EU production, tenant envs"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "inspect_environment"
+description = "Inspect selected environment configuration"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "sync_environment"
+description = "Sync secrets, policies, providers, memory, MCP bindings (plan/apply)"
+risk_class = "external_write"
+requires_approval = true
+credential_bindings = []
+
+[[tools]]
+name = "run_checks"
+description = "Run provider, memory, protocol, payment, and policy checks"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "scale_workers"
+description = "Scale model, graph, browser, code, realtime, payment workers"
+risk_class = "internal_write"
+requires_approval = true
+credential_bindings = []
+
+[[tools]]
+name = "promote_release"
+description = "Promote immutable release bundle to target environment"
+risk_class = "external_write"
+requires_approval = true
+credential_bindings = []
+
+[[tools]]
+name = "rollback_release"
+description = "Roll back to previous release bundle"
+risk_class = "external_write"
+requires_approval = true
+credential_bindings = []
+
+[[tools]]
+name = "audit_trail"
+description = "Inspect release events and promotion evidence"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "detect_drift"
+description = "Detect configuration drift from expected state"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "worker_status"
+description = "Get detailed worker pool status for an environment"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []

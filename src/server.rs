@@ -1,3 +1,4 @@
+use adk_mcp_sdk::{HealthCheck, HealthStatus};
 use std::collections::HashMap;
 use std::sync::Arc;
 use chrono::Utc;
@@ -278,6 +279,17 @@ impl EnvironmentServer {
                 })).unwrap()
             }
             None => format!("Environment not found: {}", i.environment_id),
+        }
+    }
+}
+
+#[async_trait::async_trait]
+impl HealthCheck for EnvironmentServer {
+    async fn check_health(&self) -> HealthStatus {
+        HealthStatus {
+            healthy: true,
+            message: Some("operational".into()),
+            latency_ms: Some(1),
         }
     }
 }
